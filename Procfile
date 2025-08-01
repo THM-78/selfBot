@@ -1,1 +1,1 @@
-worker: sh ./install_ffmpeg.sh && python main.py
+worker: python main.py
