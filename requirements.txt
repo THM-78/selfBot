@@ -1,4 +1,4 @@
 telethon
-ffmpeg
 ffmpeg-python
+imageio-ffmpeg
 mutagen
