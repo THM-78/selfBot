@@ -1,3 +1,4 @@
 telethon
 ffmpeg
+ffmpeg-python
 mutagen
