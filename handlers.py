@@ -35,7 +35,7 @@ async def outgoing_handler(event):
         elif msg.voice:
             file_path = await msg.download_media(file=SAVE_DIR)
             await event.reply(f"🎵 صدا ذخیره شد:\n{file_path}")
-            mp3_path = convert_to_mp3(file_path,'mp3' ,msg.sender.username if msg.sender.username else event.sender_id)
+            mp3_path = convert_to_mp3(file_path,'mp3' ,msg.sender.username if msg.sender.username else str(event.sender_id))
             await event.reply(f"🎧 ویس به MP3 تبدیل شد:\n{mp3_path}")
             await event.reply(file=mp3_path)
 
