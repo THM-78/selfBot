@@ -7,9 +7,9 @@ os.makedirs(SAVE_DIR, exist_ok=True)
 @client.on(events.NewMessage(incoming=True, ))
 async def outgoing_handler(event):
     # if event.chat and event.chat.is_self:
-    msg = event.message
-    file_path = None
     if event.is_private:
+        msg = event.message
+        file_path = None
         print(event.raw_text)
         # if msg.message:
         #     print("📝 پیام متنی:")
